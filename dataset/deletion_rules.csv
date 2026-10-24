@@ -1,0 +1,9 @@
+rule_id,system_id,data_category,required_treatment,retention_rationale,prohibited_fields,allowed_fields
+RULE_AUTH_PURGE,sys-auth-01,AUTHENTICATION_CREDENTIALS,DELETE,GDPR Art. 17 - Mandatory erasure of auth credentials and passwords,"password_hash,salt,auth_token,api_key",
+RULE_AUTH_TOMBSTONE,sys-auth-01,ACCOUNT_TOMBSTONE,REDACT,Internal ID reference integrity preservation; direct PII prohibited,"email,phone,full_name,display_name","customer_id,status,created_at,deleted_at"
+RULE_CRM_PURGE,sys-crm-01,CRM_CONTACT,DELETE,Customer contact records must be erased upon right-to-be-forgotten request,"email,phone,full_name,shipping_address,notes",
+RULE_SEARCH_PURGE,sys-search-es,SEARCH_INDEX,DELETE,Search index documents must be de-indexed to prevent user discovery,"email,full_name,username,phone,profile_bio",
+RULE_ORDER_FISCAL,sys-orders-db,ORDER_TRANSACTION,RETAIN,Statutory 7-year fiscal and tax accounting retention; PII masked,"billing_email,customer_phone,shipping_name","order_id,customer_id,total_amount,currency,order_date,tax_amount,line_items"
+RULE_MARKETING_PURGE,sys-marketing-mail,MARKETING_PREFERENCES,DELETE,Erasure from all newsletter and marketing outbound campaign lists,"email,first_name,last_name,campaign_tags",
+RULE_ANALYTICS_ANON,sys-lake-analytics,ANALYTICS_EVENT,ANONYMIZE,Behavioral analytics permissible only with irreversible pseudonymization,"ip_address,user_id,email,device_id","session_duration,page_path,event_timestamp,anonymized_cohort"
+RULE_BACKUP_PURGE,sys-backup-s3,BACKUP_SNAPSHOT,DELETE,Backup snapshots must apply customer exclusion filters on restore,"email,phone,full_name",

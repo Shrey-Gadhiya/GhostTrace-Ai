@@ -1,0 +1,7 @@
+{
+  "snapshot_id": "snap_prod_20261015_CUST-2026-1183",
+  "storage_tier": "S3_GLACIER",
+  "contains_customer": "CUST-2026-1183",
+  "restore_filter_applied": false,
+  "status": "UNBLOCKED_RESTORE_RISK"
+}

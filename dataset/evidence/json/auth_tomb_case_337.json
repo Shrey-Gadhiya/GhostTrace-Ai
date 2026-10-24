@@ -1,0 +1,7 @@
+{
+  "customer_id": "CUST-2026-1337",
+  "status": "DELETED",
+  "email": "george.gonzalez337@example.com",
+  "phone": "+1-555-0337",
+  "is_deleted": true
+}

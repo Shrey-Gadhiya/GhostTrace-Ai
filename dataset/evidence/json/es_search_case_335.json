@@ -1,0 +1,20 @@
+{
+  "took": 4,
+  "hits": {
+    "total": {
+      "value": 1,
+      "relation": "eq"
+    },
+    "hits": [
+      {
+        "_index": "customers_v2",
+        "_id": "doc_CUST-2026-1335",
+        "_source": {
+          "customer_id": "CUST-2026-1335",
+          "email": "evan.lewis335@example.com",
+          "name": "Evan Lewis"
+        }
+      }
+    ]
+  }
+}

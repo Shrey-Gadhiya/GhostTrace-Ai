@@ -1,0 +1,9 @@
+{
+  "customer_id": "CUST-2026-1014",
+  "status": "TOMBSTONE",
+  "email": "[REDACTED]",
+  "phone": null,
+  "full_name": null,
+  "password_hash": null,
+  "deleted_at": "2026-10-16T11:14:00Z"
+}
