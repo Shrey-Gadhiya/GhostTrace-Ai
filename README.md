@@ -1,3 +1,4 @@
+HEAD
 # GhostTrace AI — Intelligent Data Deletion Audit Platform
 ### HackerRank Orchestrate October 2026 Submission: "Ghost Data Still Exists"
 **Enterprise Privacy Compliance & Distributed Forensic Deletion Verification**
@@ -183,3 +184,6 @@ python scripts/package_submission.py
 
 **Made by Shrey Gadhiya**  
 *HackerRank Orchestrate October 2026: "Ghost Data Still Exists"*
+
+# GhostTrace-Ai
+ 0e1b76c3e62835e400b99eff955eb409fe2988c6
